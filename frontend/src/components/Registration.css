@@ -1,0 +1,38 @@
+#registration{
+    border: 2px solid black;
+    max-width: 800px;
+    min-width: 500px;
+    margin: 0 auto;
+    
+}
+h1{
+    text-align: center;
+}
+#regFormDiv{
+    text-align: center;
+    
+}
+.regLabel{
+    margin-right: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+}
+.regInp{
+    margin: 10px ;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+#regBtn{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    width: 100px;
+    margin: 10px auto;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
