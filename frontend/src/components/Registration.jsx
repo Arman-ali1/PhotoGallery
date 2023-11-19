@@ -1,24 +1,35 @@
-import React from "react";
+import RegisterUser from "../../../backend/public/RegisterUser.js"
+
 import "./registration.css";
+import { useEffect, useState } from "react";
+
+
 function Registration() {
+  // const [regUsers,setRegUser] =  useState();
+  let formdata ;
+  const RegUser = async (event)=>{
+    formdata = event;
+  }
+
   return (
     <>
       <div id="registration">
-        <form method="post" >
+        <form method="GET" action="">
           <h1>Registration Form</h1>
           <div id="regFormDiv">
-            <label className="regLabel">Name &nbsp;</label>
-            <input type="text" className="regInp"></input>
+            <label htmlFor="name" className="regLabel">Name &nbsp;</label>
+            <input type="text"  id="name" className="regInp" ></input>
             <br />
-            <label className="regLabel">Mobile</label>
-            <input type="text" className="regInp"></input>
+            <label htmlFor="mobile" className="regLabel">Mobile</label>
+            <input type="text" id="mobile" className="regInp"></input>
             <br />
           </div>
-          <button id="regBtn" type="submit">
+          <button id="regBtn" type="submit" onClick={RegUser}>
             Submit
           </button>
         </form>
       </div>
+      
     </>
   );
 }
